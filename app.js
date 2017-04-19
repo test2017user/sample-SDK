@@ -35,7 +35,7 @@ app.post('/api', function(req, res) {
         type: "text",
         text: req.body.events[0].message.text
       }]
-    },
+    },　
     auth: {
       bearer: 'e4mHF9Qe3wQDGnexQjulQp3KHxJOJ2ZgJIkye7hz7OYaa8gQgJRqoyOKIi+xfJsOnqIby+effXmoUdTVrZE7Jy8/NtXpUB8xvb555aC6Tv/6hWwxe3X50gu+LFdYopMHfdZ4YazvfN44KZDP3obB0gdB04t89/1O/w1cDnyilFU=' // ここは自分のtokenに書き換える
     },
