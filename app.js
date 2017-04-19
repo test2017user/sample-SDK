@@ -26,3 +26,17 @@ app.listen(appEnv.port, '0.0.0.0', function() {
   // print a message when the server starts listening
   console.log("server starting on " + appEnv.url);
 });
+// create a new express server
+var app = express();
+
+// ----------ここから----------
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
+// --------ここまで追加--------
+
+// serve the files out of ./public as our main files
+app.use(express.static(__dirname + '/public'));
