@@ -28,7 +28,7 @@ var request = require('request');
 app.post('/api', function(req, res) {
   var options = {
     method: 'POST',
-    uri: 'https://api.line.me/v2/bot/message/reply',
+    uri: 'https://sample-sdk.mybluemix.net/api',
     body: {
       replyToken: req.body.events[0].replyToken,
       messages: [{
